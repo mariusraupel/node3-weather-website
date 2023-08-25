@@ -15,7 +15,7 @@ app.set('views', viewsPath)
 console.log(partialsPath);
 
 app.use(express.static(publicDirectoryPath))
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 
 app.get('', (req, res) => {
     res.render('index', {
